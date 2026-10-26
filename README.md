@@ -11,4 +11,4 @@ A hands-on repository for learning how to build AI agents, one topic at a time.
 
 | # | Topic | Branch | Status |
 |---|-------|--------|--------|
-| 01 | [What is Agentic AI?](01-what-is-agentic-ai/README.md) | `topic/01-what-is-agentic-ai` | In review |
+| | _Topics will be added here as they are merged._ | | |
