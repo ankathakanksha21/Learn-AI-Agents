@@ -1,11 +1,8 @@
 # Learn AI Agents
 
-A hands-on repository for learning how to build AI agents, one topic at a time.
+Bite-sized notes on important AI agent concepts you need to know to build production-grade agentic systems.
 
-## Workflow
-
-- `main` is the default branch and always holds merged, reviewed work.
-- Each topic is developed on its own branch, then merged into `main` via a pull request.
+Video explainers: [instagram.com/ai.engineeringgg](https://www.instagram.com/ai.engineeringgg/)
 
 ## Topics
 
