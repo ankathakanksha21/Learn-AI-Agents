@@ -40,9 +40,11 @@ A few things to keep in mind:
 Benchmarks measure real things. But pricing, rate limits, context windows and even response style often matter more than a few points on a leaderboard.
 
 <p align="center">
-  <img src="images/benchmark-comparison.png" alt="Benchmark charts comparing models on intelligence index, output speed in tokens per second, and price per million tokens." width="100%">
+  <img src="images/benchmark-intelligence.png" alt="Benchmark chart comparing models on the Artificial Analysis Intelligence Index, where higher is better." width="700">
+  <img src="images/benchmark-speed.png" alt="Benchmark chart comparing models on output speed in tokens per second, where higher is better." width="700">
+  <img src="images/benchmark-price.png" alt="Benchmark chart comparing models on price in USD per million tokens, where lower is better." width="700">
   <br>
-  <sub>Image: Artificial Analysis</sub>
+  <sub>Images: Artificial Analysis</sub>
 </p>
 
 Here's what works:
