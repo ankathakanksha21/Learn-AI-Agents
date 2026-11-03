@@ -18,6 +18,10 @@ Want to connect Gmail? Same three things. Notion? Same three things again.
 
 If you switch AI apps, say ChatGPT instead of Claude, each one has its own format for tool descriptions. You can't reuse any of it, so you start over. Want ChatGPT to talk to GitHub? Build all three. Want Claude to do the same? Build all three again.
 
+<p align="center">
+  <img src="images/per-model-tool-formats.png" alt="Claude and ChatGPT each connect to GitHub, Gmail and Notion separately, with tool descriptions written in Claude's format and in ChatGPT's format." width="700">
+</p>
+
 Two models and three tools means six separate integrations to build and maintain. That's the M×N problem, and MCP turns it into M+N.
 
 <p align="center">
@@ -35,6 +39,10 @@ Two models and three tools means six separate integrations to build and maintain
 ### MCP host
 
 The host is your AI app, like Claude Desktop or Cursor. It's the entry point. You send a prompt, the model decides which tool it needs, and the host hands the call off.
+
+<p align="center">
+  <img src="images/mcp-host.png" alt="The MCP host is the AI app, such as Claude or ChatGPT." width="700">
+</p>
 
 ### MCP client
 
