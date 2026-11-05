@@ -17,7 +17,7 @@ If your budget is tight, self-hosting is basically off the table.
 Once you know your budget, figure out your real priority: cost, speed or accuracy. Think of it as a triangle. You rarely get all three.
 
 <p align="center">
-  <img src="images/tradeoff-triangle.png" alt="Tradeoff triangle of accuracy, speed and low cost. Pick two: accuracy and speed means an expensive model, low cost and accuracy means a slower model, low cost and speed means a smaller model." width="700">
+  <img src="images/tradeoff-triangle.png" alt="Tradeoff triangle of accuracy, speed and low cost. Pick two: accuracy and speed means an expensive model, low cost and accuracy means a slower model, low cost and speed means a smaller model." width="500">
 </p>
 
 | If you want                  | You need                                                      |
@@ -40,9 +40,9 @@ A few things to keep in mind:
 Benchmarks measure real things. But pricing, rate limits, context windows and even response style often matter more than a few points on a leaderboard.
 
 <p align="center">
-  <img src="images/benchmark-intelligence.png" alt="Benchmark chart comparing models on the Artificial Analysis Intelligence Index, where higher is better." width="700">
-  <img src="images/benchmark-speed.png" alt="Benchmark chart comparing models on output speed in tokens per second, where higher is better." width="700">
-  <img src="images/benchmark-price.png" alt="Benchmark chart comparing models on price in USD per million tokens, where lower is better." width="700">
+  <img src="images/benchmark-intelligence.png" alt="Benchmark chart comparing models on the Artificial Analysis Intelligence Index, where higher is better." width="500">
+  <img src="images/benchmark-speed.png" alt="Benchmark chart comparing models on output speed in tokens per second, where higher is better." width="500">
+  <img src="images/benchmark-price.png" alt="Benchmark chart comparing models on price in USD per million tokens, where lower is better." width="500">
   <br>
   <sub>Images: Artificial Analysis</sub>
 </p>
@@ -55,7 +55,7 @@ Here's what works:
 4. Eliminate models based on your results, and let your use case win over the leaderboard.
 
 <p align="center">
-  <img src="images/eval-process.png" alt="Evaluation process: list your 3 real tasks, run each through every model, score 1 to 5 per task on accuracy, speed and format, then eliminate based on results." width="700">
+  <img src="images/eval-process.png" alt="Evaluation process: list your 3 real tasks, run each through every model, score 1 to 5 per task on accuracy, speed and format, then eliminate based on results." width="500">
 </p>
 
 Your constraints should define your choice, more than any benchmark, a friend's recommendation or whatever's trending.

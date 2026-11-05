@@ -13,19 +13,19 @@ To connect one tool to your AI, you build three things:
 Want to connect Gmail? Same three things. Notion? Same three things again.
 
 <p align="center">
-  <img src="images/without-mcp.png" alt="Without MCP, the AI app needs its own tool descriptions, tool call logic and response handling for each of GitHub, Gmail and Notion." width="700">
+  <img src="images/without-mcp.png" alt="Without MCP, the AI app needs its own tool descriptions, tool call logic and response handling for each of GitHub, Gmail and Notion." width="500">
 </p>
 
 If you switch AI apps, say ChatGPT instead of Claude, each one has its own format for tool descriptions. You can't reuse any of it, so you start over. Want ChatGPT to talk to GitHub? Build all three. Want Claude to do the same? Build all three again.
 
 <p align="center">
-  <img src="images/per-model-tool-formats.png" alt="Claude and ChatGPT each connect to GitHub, Gmail and Notion separately, with tool descriptions written in Claude's format and in ChatGPT's format." width="700">
+  <img src="images/per-model-tool-formats.png" alt="Claude and ChatGPT each connect to GitHub, Gmail and Notion separately, with tool descriptions written in Claude's format and in ChatGPT's format." width="500">
 </p>
 
 Two models and three tools means six separate integrations to build and maintain. That's the M×N problem, and MCP turns it into M+N.
 
 <p align="center">
-  <img src="images/before-after-mcp.png" alt="Before MCP, M apps connect to N tools directly, giving M times N integrations. After MCP, every app and tool connects through MCP, giving M plus N integrations." width="700">
+  <img src="images/before-after-mcp.png" alt="Before MCP, M apps connect to N tools directly, giving M times N integrations. After MCP, every app and tool connects through MCP, giving M plus N integrations." width="500">
   <br>
   <sub>Image: Daily Dose of Data Science</sub>
 </p>
@@ -33,7 +33,7 @@ Two models and three tools means six separate integrations to build and maintain
 ## How MCP works
 
 <p align="center">
-  <img src="images/mcp-flow.png" alt="MCP flow: the MCP host sends the prompt and tools to the LLM, the LLM suggests a tool, the MCP client communicates with the MCP server, the server calls the tool on GitHub, and results return the same way." width="700">
+  <img src="images/mcp-flow.png" alt="MCP flow: the MCP host sends the prompt and tools to the LLM, the LLM suggests a tool, the MCP client communicates with the MCP server, the server calls the tool on GitHub, and results return the same way." width="500">
 </p>
 
 ### MCP host
@@ -41,7 +41,7 @@ Two models and three tools means six separate integrations to build and maintain
 The host is your AI app, like Claude Desktop or Cursor. It's the entry point. You send a prompt, the model decides which tool it needs, and the host hands the call off.
 
 <p align="center">
-  <img src="images/mcp-host.png" alt="The MCP host is the AI app, such as Claude or ChatGPT." width="700">
+  <img src="images/mcp-host.png" alt="The MCP host is the AI app, such as Claude or ChatGPT." width="500">
 </p>
 
 ### MCP client
@@ -49,7 +49,7 @@ The host is your AI app, like Claude Desktop or Cursor. It's the entry point. Yo
 The client lives inside the host and maintains the connection to the server. It fetches the tool descriptions, forwards the tool calls and gets the results back. It holds no logic and runs nothing. It's only the pipe.
 
 <p align="center">
-  <img src="images/mcp-clients-and-servers.png" alt="One MCP host with three MCP clients, each connected to its own MCP server for GitHub, Gmail and Notion." width="700">
+  <img src="images/mcp-clients-and-servers.png" alt="One MCP host with three MCP clients, each connected to its own MCP server for GitHub, Gmail and Notion." width="500">
 </p>
 
 ### MCP server
@@ -65,7 +65,7 @@ The connector code that used to live inside every app is now one standalone proc
 MCP is an agreed standard. Instead of every AI app building its own connector to every tool, you build one MCP server per tool, and any app that speaks MCP can connect to it. M×N becomes M+N.
 
 <p align="center">
-  <img src="images/mcp-standard.png" alt="Claude and ChatGPT both connect through MCP to GitHub, Gmail and Notion." width="700">
+  <img src="images/mcp-standard.png" alt="Claude and ChatGPT both connect through MCP to GitHub, Gmail and Notion." width="500">
 </p>
 
 REST APIs became the standard for the web and USB became the standard for hardware. MCP is that standard for AI agents.

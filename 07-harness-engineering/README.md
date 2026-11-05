@@ -5,7 +5,7 @@
 A model on its own can only answer a question. It can't remember what happened two steps ago. It can't run code, pull real-time data, install a package or recover when something fails halfway.
 
 <p align="center">
-  <img src="images/model-alone.png" alt="A model on its own: a question goes in and an answer comes out." width="700">
+  <img src="images/model-alone.png" alt="A model on its own: a question goes in and an answer comes out." width="500">
 </p>
 
 Every capability you think of when you hear "powerful agent", like memory, tool use and error recovery, comes from the infrastructure wrapping the model. That infrastructure is called the agent harness. Engineering it deliberately is called harness engineering.
@@ -13,7 +13,7 @@ Every capability you think of when you hear "powerful agent", like memory, tool 
 AI agent = model + harness. If you're not the model, you're the harness.
 
 <p align="center">
-  <img src="images/model-plus-harness.png" alt="Model plus harness equals AI agent." width="700">
+  <img src="images/model-plus-harness.png" alt="Model plus harness equals AI agent." width="500">
 </p>
 
 Cursor, Claude Code and Codex are each a harness built around a model.
@@ -29,13 +29,13 @@ People often confuse these three layers:
 | Harness engineering | The whole application infrastructure: tool execution, state persistence, error recovery, verification, safety and more |
 
 <p align="center">
-  <img src="images/three-layers.png" alt="Three nested layers: prompt in the center, context around it and harness on the outside. Prompt engineering is what the model reads, context engineering is what gets into the window and when, and harness engineering is everything on the outside: tools, memory, recovery and safety." width="700">
+  <img src="images/three-layers.png" alt="Three nested layers: prompt in the center, context around it and harness on the outside. Prompt engineering is what the model reads, context engineering is what gets into the window and when, and harness engineering is everything on the outside: tools, memory, recovery and safety." width="500">
 </p>
 
 ## Anatomy of a production-grade harness
 
 <p align="center">
-  <img src="images/harness-anatomy.png" alt="The 12 components of a production-grade harness: orchestration loop, tool layer, skills, memory, context management, prompt construction, error handling, guardrails and safety, subagent orchestration, output parsing, verification loops and state management." width="700">
+  <img src="images/harness-anatomy.png" alt="The 12 components of a production-grade harness: orchestration loop, tool layer, skills, memory, context management, prompt construction, error handling, guardrails and safety, subagent orchestration, output parsing, verification loops and state management." width="500">
 </p>
 
 1. **Orchestration loop.** Keeps the model running, calling tools and feeding results back until the task is done. The harness decides when to stop: no tool calls are left, the turn limit is hit, the token budget runs out or a guardrail trips.

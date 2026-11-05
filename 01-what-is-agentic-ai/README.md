@@ -14,7 +14,7 @@ Agentic AI closes that gap between generating and doing. It plans, executes and 
 ## What an agent is made of
 
 <p align="center">
-  <img src="images/agent-components.png" alt="Components of an AI agent: LLMs, state and control logic, memory, tools and protocols, RAG, evaluations and observability" width="700">
+  <img src="images/agent-components.png" alt="Components of an AI agent: LLMs, state and control logic, memory, tools and protocols, RAG, evaluations and observability" width="500">
 </p>
 
 - **LLM.** The brain. It plans how to break a goal into multiple steps.
@@ -31,7 +31,7 @@ Together, these make the system goal-driven. It takes the action instead of tell
 When you build your first agent, most tutorials point you to no-code and low-code tools like n8n, or frameworks like LangGraph.
 
 <p align="center">
-  <img src="images/no-code-vs-low-code.png" alt="No-code means drag-and-drop and clicks. Low-code means business-friendly expression languages." width="700">
+  <img src="images/no-code-vs-low-code.png" alt="No-code means drag-and-drop and clicks. Low-code means business-friendly expression languages." width="500">
 </p>
 
 Most agents built this way aren't usable at real production scale:
