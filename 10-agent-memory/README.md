@@ -6,7 +6,15 @@ There are four types of memory you need to know to architect memory for an AI ag
 
 Every user and agent message gets appended to a messages array, and that array is sent to the model with every new request. The agent isn't remembering anything. It re-reads the full conversation every time.
 
+<p align="center">
+  <img src="images/short-term-memory.png" alt="Short-term memory: user messages and agent replies are appended to a messages array, which goes into the context window as short-term memory alongside the new message." width="500">
+</p>
+
 The problem is that the context window grows with every message, and eventually you hit the model's limit. So you either drop older messages or summarize them.
+
+<p align="center">
+  <img src="images/limit-reached.png" alt="Claude error message: you've reached the limit for Claude messages at this time, please wait before trying again." width="500">
+</p>
 
 This works well for a single session. For anything beyond that, you need long-term memory.
 
@@ -29,6 +37,16 @@ When the user comes back, you run a similarity search, pull the relevant facts a
 </p>
 
 This sounds like RAG, and the implementation is similar, but the role is completely different.
+
+| Aspect         | RAG                              | Semantic memory                     |
+| -------------- | -------------------------------- | ----------------------------------- |
+| Nature         | Static                           | Dynamic                             |
+| Data source    | Loaded once from docs            | Written mid-conversation            |
+| Update trigger | Manual reload                    | Agent learns as it talks            |
+| What it stores | Knowledge base content           | User-specific context               |
+| Access pattern | Query for facts                  | Recalled automatically next session |
+| Role           | Answers questions from knowledge | Keeps the agent coherent over time  |
+| Think of it as | A library                        | A diary                             |
 
 ### Episodic memory
 
