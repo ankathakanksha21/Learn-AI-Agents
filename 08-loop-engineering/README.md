@@ -3,7 +3,7 @@
 Everyone's talking about loop engineering.
 
 <p align="center">
-  <img src="images/steipete-post.png" alt="Post by Peter Steinberger: you shouldn't be prompting coding agents anymore, you should be designing loops that prompt your agents." width="700">
+  <img src="images/steipete-post.png" alt="Post by Peter Steinberger: you shouldn't be prompting coding agents anymore, you should be designing loops that prompt your agents." width="500">
   <br>
   <sub>Post by Peter Steinberger (@steipete)</sub>
 </p>
@@ -17,13 +17,13 @@ The old way was turn-based. You prompt the system, it gives you an output, you c
 A loop fixes that. You set the goal once and define a stopping condition. An orchestrator then keeps prompting the system based on the current state of the work.
 
 <p align="center">
-  <img src="images/goal-and-stop-condition.png" alt="A goal and a stop condition go into the loop." width="700">
+  <img src="images/goal-and-stop-condition.png" alt="A goal and a stop condition go into the loop." width="500">
 </p>
 
 The orchestrator looks at the state, decides the next move, checks it and decides whether to keep going, until it hits your stopping condition.
 
 <p align="center">
-  <img src="images/act-check-decide.png" alt="The loop cycles through act, check and decide. Act follows your instructions toward the goal, check looks at the current state and exit condition, and decide picks the next move." width="700">
+  <img src="images/act-check-decide.png" alt="The loop cycles through act, check and decide. Act follows your instructions toward the goal, check looks at the current state and exit condition, and decide picks the next move." width="500">
 </p>
 
 ## Prompt engineering moved to the start
@@ -35,7 +35,7 @@ Even a fully automated loop is still being prompted, so prompt engineering isn't
 A great loop needs a few parts wrapped around it: skills, connectors, memory and, most important of all, verification.
 
 <p align="center">
-  <img src="images/loop-parts.png" alt="The parts a serious loop needs: skills, connectors, memory, verification, isolated copies and guardrails." width="700">
+  <img src="images/loop-parts.png" alt="The parts a serious loop needs: skills, connectors, memory, verification, isolated copies and guardrails." width="500">
 </p>
 
 ### Verification
@@ -49,7 +49,7 @@ A great loop runs real tests, reads the results and has an independent verifier 
 Loops let you run isolated copies of your repo, so multiple agents don't collide with each other. A loop can spin up 100 of them.
 
 <p align="center">
-  <img src="images/isolated-copies.png" alt="Your repo branches into isolated copies, up to 100." width="700">
+  <img src="images/isolated-copies.png" alt="Your repo branches into isolated copies, up to 100." width="500">
 </p>
 
 You still have to review, understand and merge every one of those implementations, so base the number of loops you run on your review bandwidth. If you stop reviewing, you won't even understand what you shipped. For anything critical, you're responsible for what the agent built.
