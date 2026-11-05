@@ -50,7 +50,7 @@ This sounds like RAG, and the implementation is similar, but the role is complet
 
 ### Episodic memory
 
-Instead of facts, episodic memory stores events. Certain keywords signal the LLM to extract and store an episode before answering. It captures what happened, when, with whom and the outcome.
+Instead of facts, episodic memory stores events. Keywords like "attended", "met" and "experienced" signal the LLM to extract and store an episode before answering. It captures what happened, when, with whom and the outcome.
 
 Each episode is stored as a timestamped JSON key-value pair.
 
